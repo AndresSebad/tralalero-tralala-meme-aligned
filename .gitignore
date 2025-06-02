@@ -1,0 +1,54 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos de configuración sensibles
+.env
+*.env
+
+# Modelos y checkpoints
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+*.joblib
+*.pkl
+*.sav
+
+# Datos procesados y crudos (carpetas específicas)
+data/raw/*
+data/processed/*
+data/evaluation/*
+
+# Archivos de datos comunes
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.json
+*.parquet
+
+# Archivos temporales de Jupyter/Gradio
+.ipynb_checkpoints/
+__pycache__/
+*.log
+*.tmp
+*.cache
+*.bak
+
+# Hugging Face y otros
+*.token
+hub/
+*.mlmodel
+
+# VSCode/PyCharm y otros editores
+.vscode/
+.idea/
+
+# Mac y sistemas operativos
+.DS_Store
+Thumbs.db
