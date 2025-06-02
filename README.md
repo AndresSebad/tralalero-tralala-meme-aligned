@@ -1,27 +1,26 @@
-# Tralalelo-Tralala-Meme-Align 
-**Hackathon Somos NLP 2025** 
+# Tralalelo-Tralala-Meme-Align
 
-<img src="./tralalelo-tralala-logo.png" alt="Descripción" width="450" height="250"/>
+**Somos NLP Hackathon 2025**
 
-> Fine-tuning de **LLaVA-Next** con 1194 memes chilenos.
+<img src="./tralalelo-tralala-logo.png" alt="Description" width="450" height="250"/>
 
-🔗 [Demo en Gradio](https://huggingface.co/spaces/somosnlp-hackathon-2025/tralalelo-tralala-demo)
+> Fine-tuning **LLaVA-Next** with 1194 Chilean memes.
 
-🔗 [Modelo en Hugging Face](https://huggingface.co/somosnlp-hackathon-2025/llava-v1.6-mistral-7b-memes-chilenos-small)
-
-🔗 [Dataset con memes chilenos](https://huggingface.co/datasets/somosnlp-hackathon-2025/memes_instagram_chilenos_es_small)
-
----
-
-## 1 · Descripción
-
-Demostramos que un modelo multimodal puede **entender y explicar humor local**.
-
-Partimos de **LLaVA-Next** y lo adaptamos con un dataset propio de **1194 memes chilenos** (imagen + texto + 4776 explicaciones). 
+🔗 [Demo on Gradio](https://huggingface.co/spaces/somosnlp-hackathon-2025/tralalelo-tralala-demo)
+🔗 [Model on Hugging Face](https://huggingface.co/somosnlp-hackathon-2025/llava-v1.6-mistral-7b-memes-chilenos-small)
+🔗 [Dataset of Chilean Memes](https://huggingface.co/datasets/somosnlp-hackathon-2025/memes_instagram_chilenos_es_small)
 
 ---
 
-## 2 · Estructura del repo
+## 1 · Description
+
+We demonstrate that a multimodal model can **understand and explain local humor**.
+
+We started with **LLaVA-Next** and adapted it using a custom dataset of **1194 Chilean memes** (image + text + 4776 explanations).
+
+---
+
+## 2 · Repository Structure
 
 ```
 ├── data/
@@ -41,7 +40,7 @@ Partimos de **LLaVA-Next** y lo adaptamos con un dataset propio de **1194 memes 
 
 ---
 
-## 3 · Puesta en marcha rápida
+## 3 · Quick Start
 
 ```bash
 make init                       
@@ -53,40 +52,41 @@ huggingface-cli login
 
 ## 4 · Dataset
 
-| Notebook | Descripción |
-|----------|-------------|
-| **create_dataset.ipynb** | Define cuentas de Instagram, descarga memes con **Apify** y guarda metadatos. |
-| **save_data.ipynb**      | Lee el Excel procesado, limpia y sube el dataset a Hugging Face. |
+| Notebook                  | Description                                                                      |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| **create\_dataset.ipynb** | Defines Instagram accounts, downloads memes using **Apify**, and saves metadata. |
+| **save\_data.ipynb**      | Reads the processed Excel, cleans and uploads the dataset to Hugging Face.       |
 
 ---
 
-## 5 · Variables de entorno
+## 5 · Environment Variables
 
-Antes de ejecutar la app o scripts, asegúrate de tener un archivo `.env` en la raíz del proyecto con las siguientes claves:
+Before running the app or any scripts, make sure you have a `.env` file in the project root with the following keys:
 
 ```
-OPENAI_API_KEY=tu_clave_openai
-APIFY_TOKEN=tu_token_apify
-HF_TOKEN=tu_token_huggingface
+OPENAI_API_KEY=your_openai_key
+APIFY_TOKEN=your_apify_token
+HF_TOKEN=your_huggingface_token
 ```
 
 ---
 
-## 6 · Entrenamiento
+## 6 · Training
 
-- Script en `src/train/`
-- Ejecutado en GPU **L40S**
-- Fine-tuning con **LoRA (PEFT)**
-- Hiperparámetros:
-  - r = 8 · alpha = 8 · dropout = 0.1
-  - batch = 1 · accumulate = 8 · epochs = 2
-- Métrica: `bert_score` (maxima)
+* Script located in `src/train/`
+* Trained on **L40S GPU**
+* Fine-tuning using **LoRA (PEFT)**
+* Hyperparameters:
+
+  * r = 8 · alpha = 8 · dropout = 0.1
+  * batch = 1 · accumulate = 8 · epochs = 2
+* Metric: `bert_score` (maximize)
 
 ---
 
-## 7 · Demo Gradio
+## 7 · Gradio Demo
 
-Edita el código en `src/app/`. Para desplegarlo:
+Edit the code in `src/app/`. To deploy it:
 
 ```bash
 make push_app_hf SPACE_ID=andressebastian/tralalelo-tralala-demo
