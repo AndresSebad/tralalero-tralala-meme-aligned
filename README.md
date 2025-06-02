@@ -5,9 +5,11 @@
 
 > Fine-tuning de **LLaVA-Next** con 1194 memes chilenos.
 
-🔗 [Demo en Gradio](https://huggingface.co/spaces/somosnlp-hackathon-2025/tralalelo-tralala-demo). 
-🔗 [Modelo en Hugging Face](https://huggingface.co/somosnlp-hackathon-2025/llava-v1.6-mistral-7b-memes-chilenos-small).  
-🔗 [Dataset con memes chilenos](https://huggingface.co/datasets/somosnlp-hackathon-2025/memes_instagram_chilenos_es_small).
+🔗 [Demo en Gradio](https://huggingface.co/spaces/somosnlp-hackathon-2025/tralalelo-tralala-demo)
+
+🔗 [Modelo en Hugging Face](https://huggingface.co/somosnlp-hackathon-2025/llava-v1.6-mistral-7b-memes-chilenos-small)
+
+🔗 [Dataset con memes chilenos](https://huggingface.co/datasets/somosnlp-hackathon-2025/memes_instagram_chilenos_es_small)
 
 ---
 
