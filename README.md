@@ -17,7 +17,7 @@
 
 Demostramos que un modelo multimodal puede **entender y explicar humor local**.
 
-Partimos de **LLaVA-Next** y lo adaptamos con un dataset propio de **700 memes chilenos** (imagen + texto + 4 776 explicaciones). 
+Partimos de **LLaVA-Next** y lo adaptamos con un dataset propio de **1194 memes chilenos** (imagen + texto + 4776 explicaciones). 
 
 ---
 
