@@ -7,7 +7,9 @@
 > Fine-tuning **LLaVA-Next** with 1194 Chilean memes.
 
 🔗 [Demo on Gradio](https://huggingface.co/spaces/somosnlp-hackathon-2025/tralalelo-tralala-demo)
+
 🔗 [Model on Hugging Face](https://huggingface.co/somosnlp-hackathon-2025/llava-v1.6-mistral-7b-memes-chilenos-small)
+
 🔗 [Dataset of Chilean Memes](https://huggingface.co/datasets/somosnlp-hackathon-2025/memes_instagram_chilenos_es_small)
 
 ---
